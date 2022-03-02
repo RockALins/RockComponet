@@ -13,7 +13,6 @@
 #import "QMProfileManager.h"
 #import "QMFileTableCell.h"
 #import "QMFileModel.h"
-#import "QMChatRoomViewController.h"
 
 @interface QMPickedDocViewController ()<UITableViewDelegate, UITableViewDataSource> {
     UITableView *_tableView;
@@ -54,11 +53,10 @@
     
     __weak  QMPickedDocViewController *strongSelf = self;
     _tabbarView.selectAction = ^{
-        QMChatRoomViewController * tagViewController = nil;
+        Class chatRoomClass = NSClassFromString(@"QMChatRoomViewController");
         for (UIViewController *viewController in strongSelf.navigationController.viewControllers) {
-            if ([viewController isKindOfClass:[QMChatRoomViewController class]]) {
-                tagViewController = (QMChatRoomViewController *)viewController;
-                [strongSelf.navigationController popToViewController:tagViewController animated:true];
+            if ([viewController isKindOfClass:chatRoomClass]) {
+                [strongSelf.navigationController popToViewController:viewController animated:true];
                 
                 for (QMFileModel *model in strongSelf.pickedDocSet) {
                     if (strongSelf.callBackBlock) {
