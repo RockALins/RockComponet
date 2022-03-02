@@ -39,5 +39,5 @@ TODO: Add long description of the pod here.
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}
    s.requires_arc = true
    s.frameworks = 'UIKit'
-   s.dependency 'RockUICore'
+   s.dependency 'RockUICores'
 end
