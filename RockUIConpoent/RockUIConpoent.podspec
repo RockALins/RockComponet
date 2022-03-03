@@ -1,6 +1,6 @@
 
 #
-# Be sure to run `pod lib lint RockUIConpoents.podspec' to ensure this is a
+# Be sure to run `pod lib lint RockUIConpoent.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RockUIConpoents'
+  s.name             = 'RockUIConpoent'
   s.version          = '0.2'
   s.summary          = 'A short description of RockUIConpoent.'
 
@@ -32,16 +32,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   
    s.resource = [
-         '**/RockUIConpoents/Assets/*.bundle'
+         '**/RockUIConpoent/Assets/*.bundle'
     ]
-    
-  s.subspec 'QMAudio' do |qmAudio|
-      qmAudio.source_files = '**/RockUIConpoents/Classes/QMAudio/*{h,m}'
-  end
-  
-  s.subspec 'QMFileManager' do |qmFileManager|
-      qmFileManager.source_files = '**/RockUIConpoents/Classes/QMFileManager/**/*{h,m}'
-  end
+  s.source_files = '**/RockUIConpoent/Classes/**/*'
 
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}
    s.requires_arc = true
