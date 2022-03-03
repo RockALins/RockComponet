@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   
    s.resource = [
-         '**/RKUIConpoent/Assets/*.bundle'
+         '**/RKUIConpoent/*.bundle'
     ]
-  s.source_files = '**/RKUIConpoent/Classes/**/*'
+  s.source_files = '**/RKUIConpoent/**/*'
 
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}
    s.requires_arc = true
