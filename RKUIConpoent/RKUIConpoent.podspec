@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/RockALins/RockComponet'
+  s.homepage         = 'https://github.com/RockALins/RockComponet/RKUIConpoent'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '焦林生' => '18515384635@163.com' }
-  s.source           = { :git => 'https://github.com/RockALins/RockComponet.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RockALins/RockComponet/RKUIConpoent', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
